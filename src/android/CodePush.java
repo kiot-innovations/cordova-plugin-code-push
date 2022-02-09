@@ -570,7 +570,7 @@ public class CodePush extends CordovaPlugin {
             launchUrl = launchUrl.substring(CodePush.WWW_ASSET_PATH_PREFIX.length(), launchUrlLength);
         }
 
-        return launchUrl;
+        return "index.html";
     }
 
     private String getConfigLaunchUrl() {

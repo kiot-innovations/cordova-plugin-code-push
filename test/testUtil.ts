@@ -33,8 +33,8 @@ export class TestUtil {
     
     public static defaultAndroidEmulator = "emulator";
     
-    private static defaultTestRunDirectory = path.join(os.tmpdir(), "cordova-plugin-code-push", "test-run");
-    private static defaultUpdatesDirectory = path.join(os.tmpdir(), "cordova-plugin-code-push", "updates");
+    private static defaultTestRunDirectory = path.join(os.tmpdir(), "kiot-cordova-plugin-code-push", "test-run");
+    private static defaultUpdatesDirectory = path.join(os.tmpdir(), "kiot-cordova-plugin-code-push", "updates");
     
     /**
      * Reads the directory in which the test project is.
@@ -61,7 +61,7 @@ export class TestUtil {
      */
     public static readPluginPath(): string {
         var commandLineFlag = TestUtil.readMochaCommandLineFlag(TestUtil.PULL_FROM_NPM);
-        var pluginPath = commandLineFlag ? "cordova-plugin-code-push" : TestUtil.thisPluginPath;
+        var pluginPath = commandLineFlag ? "kiot-cordova-plugin-code-push" : TestUtil.thisPluginPath;
         console.log("pluginPath = " + pluginPath);
         return pluginPath;
     }
